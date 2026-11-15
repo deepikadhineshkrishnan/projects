@@ -14,7 +14,7 @@ CVAT projects I have annotated, with the exported labels, previews and statistic
 
 | # | Project | Annotation types | Scale | Preview |
 |---|---------|------------------|-------|---------|
-| 1 | [Urban street scenes](projects/01-object-detection-bboxes) | Boxes, polygons, polylines, points, ellipses, cuboids | 3 images · 68 objects | <img src="projects/01-object-detection-bboxes/previews/sample_01.png" width="180"> |
+| 1 | [Urban street scenes](projects/01-object-detection-bboxes) | Boxes, polygons, polylines, points, ellipses, cuboids | 3 images · 79 objects | <img src="projects/01-object-detection-bboxes/previews/sample_01.png" width="180"> |
 
 Each project folder has a README with the brief, label schema, guidelines, quality checks,
 statistics and annotated samples. The statistics come straight from the CVAT export.
