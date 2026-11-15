@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>2657722</id>
+      <name>Identify cars</name>
+      <size>5</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-10-09 14:27:35.910948+00:00</created>
+      <updated>2026-11-15 01:43:54.734136+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>4</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>4565721</id>
+          <start>0</start>
+          <stop>4</stop>
+          <url></url>
+        </segment>
+      </segments>
+      <owner></owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>Person</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Car</name>
+          <color>#fa3253</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>zebra-road-box</name>
+          <color>#bc4309</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>sign-label</name>
+          <color>#ddff33</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>road</name>
+          <color>#ffcc33</color>
+          <type>polygon</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>lane-line</name>
+          <color>#d4b7b0</color>
+          <type>polyline</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>eye-point</name>
+          <color>#733380</color>
+          <type>points</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>face-ellipse</name>
+          <color>#2a7dd1</color>
+          <type>ellipse</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3d3df5</color>
+          <type>cuboid</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Bus</name>
+          <color>#3d3df5</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Bicycle</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Motorcycle</name>
+          <color>#ff6a4d</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Traffic Sign</name>
+          <color>#b83df5</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Van</name>
+          <color>#ff00cc</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>zebra-road</name>
+          <color>#8c78f0</color>
+          <type>polygon</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+    <dumped>2026-11-15 01:47:04.185702+00:00</dumped>
+  </meta>
+  <image id="0" name="christian-wiediger-bJ3BI1MPx14-unsplash.jpg" width="2400" height="3600">
+    <polyline label="lane-line" source="manual" occluded="0" points="1489.30,2561.48;1739.74,2822.87" z_order="0">
+    </polyline>
+    <box label="Car" source="manual" occluded="0" xtl="1151.48" ytl="2253.07" xbr="1284.76" ybr="2440.39" z_order="0">
+    </box>
+    <box label="Person" source="manual" occluded="0" xtl="677.60" ytl="2344.00" xbr="948.01" ybr="2940.09" z_order="0">
+    </box>
+    <box label="Person" source="manual" occluded="0" xtl="1437.49" ytl="2312.45" xbr="1490.78" ybr="2478.24" z_order="0">
+    </box>
+    <box label="Person" source="manual" occluded="0" xtl="837.48" ytl="2267.05" xbr="865.11" ybr="2330.21" z_order="0">
+    </box>
+    <box label="sign-label" source="manual" occluded="0" xtl="236.60" ytl="1658.71" xbr="471.16" ybr="1901.90" z_order="0">
+    </box>
+    <box label="sign-label" source="manual" occluded="0" xtl="909.80" ytl="2082.88" xbr="977.85" ybr="2239.20" z_order="0">
+    </box>
+    <box label="sign-label" source="manual" occluded="0" xtl="1074.85" ytl="2175.54" xbr="1109.59" ybr="2210.28" z_order="0">
+    </box>
+    <box label="sign-label" source="manual" occluded="0" xtl="1387.55" ytl="2156.72" xbr="1439.67" ybr="2232.00" z_order="0">
+    </box>
+    <box label="sign-label" source="manual" occluded="0" xtl="1344.12" ytl="2169.75" xbr="1378.87" ybr="2255.16" z_order="0">
+    </box>
+    <box label="zebra-road-box" source="manual" occluded="0" xtl="794.00" ytl="2819.80" xbr="1711.84" ybr="2992.00" z_order="0">
+    </box>
+    <points label="eye-point" source="manual" occluded="0" points="479.39,2310.44;485.99,2312.64;422.22,2296.15;429.92,2300.55" z_order="0">
+    </points>
+    <points label="eye-point" source="manual" occluded="0" points="792.74,2309.34;801.54,2303.84;744.37,2284.05;752.06,2284.05" z_order="0">
+    </points>
+    <box label="Person" source="manual" occluded="0" xtl="1079.60" ytl="2318.10" xbr="1158.55" ybr="2572.55" z_order="0">
+    </box>
+    <box label="Person" source="manual" occluded="0" xtl="374.40" ytl="2278.89" xbr="649.98" ybr="2499.95" z_order="0">
+    </box>
+    <ellipse label="face-ellipse" source="manual" occluded="0" cx="843.33" cy="2392.85" rx="36.28" ry="48.85" z_order="0">
+    </ellipse>
+    <cuboid label="pedestrian" source="manual" occluded="0" xtl1="1077.89" ytl1="2340.85" xbl1="1077.89" ybl1="2572.11" xtr1="1155.57" ytr1="2340.77" xbr1="1155.57" ybr1="2572.11" xtl2="1163.70" ytl2="2315.78" xbl2="1163.70" ybl2="2546.94" xtr2="1086.08" ytr2="2315.88" xbr2="1086.08" ybr2="2546.95" z_order="0">
+    </cuboid>
+    <cuboid label="pedestrian" source="manual" occluded="0" xtl1="664.85" ytl1="2375.23" xbl1="664.85" ybl1="2939.45" xtr1="943.61" ytr1="2379.73" xbr1="943.61" ybr1="2944.04" xtl2="957.23" ytl2="2349.83" xbl2="957.23" ybl2="2914.04" xtr2="678.51" ytr2="2345.34" xbr2="678.51" ybr2="2909.45" z_order="0">
+    </cuboid>
+    <polygon label="road" source="manual" occluded="0" points="2400.00,3346.66;1313.40,2219.00;0.00,3409.51;4.70,3588.20;2400.00,3588.48" z_order="0">
+    </polygon>
+    <box label="Person" source="manual" occluded="0" xtl="1528.28" ytl="2300.20" xbr="1601.31" ybr="2480.21" z_order="0">
+    </box>
+    <box label="Person" source="manual" occluded="0" xtl="1646.71" ytl="2307.80" xbr="1731.58" ybr="2464.42" z_order="0">
+    </box>
+    <box label="Person" source="manual" occluded="0" xtl="987.48" ytl="2303.50" xbr="1032.88" ybr="2359.81" z_order="0">
+    </box>
+    <box label="Person" source="manual" occluded="0" xtl="711.16" ytl="2272.97" xbr="759.00" ybr="2338.10" z_order="0">
+    </box>
+    <box label="Person" source="manual" occluded="0" xtl="773.10" ytl="2294.68" xbr="817.74" ybr="2422.97" z_order="0">
+    </box>
+    <box label="Person" source="manual" occluded="0" xtl="896.90" ytl="2292.60" xbr="933.90" ybr="2387.45" z_order="0">
+    </box>
+    <ellipse label="face-ellipse" source="manual" occluded="0" cx="1130.85" cy="2339.08" rx="18.14" ry="17.59" z_order="0">
+    </ellipse>
+  </image>
+  <image id="1" name="keszthelyi-timi-P25wpQ8ndl8-unsplash.jpg" width="2400" height="3403">
+    <box label="Car" source="manual" occluded="0" xtl="1700.53" ytl="1044.18" xbr="1951.80" ybr="1224.11" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1633.00" ytl="840.78" xbr="1870.70" ybr="1020.71" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1283.97" ytl="672.61" xbr="1495.33" ybr="840.91" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1975.80" ytl="792.80" xbr="2196.60" ybr="976.30" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1576.20" ytl="627.00" xbr="1784.82" ybr="782.60" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1839.18" ytl="654.18" xbr="2041.67" ybr="827.46" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1552.42" ytl="514.20" xbr="1761.03" ybr="692.91" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1884.02" ytl="578.76" xbr="2081.80" ybr="737.08" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1636.68" ytl="762.22" xbr="1843.93" ybr="909.68" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="992.90" ytl="301.50" xbr="1152.66" ybr="427.99" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1147.37" ytl="232.99" xbr="1325.43" ybr="363.13" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1796.20" ytl="343.68" xbr="1975.81" ybr="481.08" z_order="0">
+    </box>
+    <box label="Bus" source="manual" occluded="0" xtl="2018.20" ytl="328.50" xbr="2360.19" ybr="670.60" z_order="0">
+    </box>
+    <polyline label="lane-line" source="manual" occluded="0" points="1955.72,3397.15;1691.55,1560.74;1440.16,431.63" z_order="0">
+    </polyline>
+    <polyline label="lane-line" source="manual" occluded="0" points="2398.84,1292.31;1968.50,448.67" z_order="0">
+    </polyline>
+    <box label="Car" source="manual" occluded="0" xtl="1264.40" ytl="588.95" xbr="1485.83" ybr="758.40" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1250.20" ytl="546.82" xbr="1452.54" ybr="692.70" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1243.73" ytl="460.60" xbr="1437.20" ybr="600.23" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1519.31" ytl="344.90" xbr="1697.21" ybr="495.50" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1121.04" ytl="370.89" xbr="1311.68" ybr="546.91" z_order="0">
+    </box>
+    <box label="Van" source="manual" occluded="0" xtl="2067.40" ytl="914.60" xbr="2348.02" ybr="1239.20" z_order="0">
+    </box>
+    <polygon label="road" source="manual" occluded="0" points="246.41,3380.17;457.70,1562.90;564.91,769.74;639.85,395.04;1058.27,288.88;1295.58,182.71;1264.35,39.07;1251.86,1.60;2400.00,1.60;2400.00,438.47;2369.72,513.70;2400.00,643.57;2400.00,3403.00;393.82,3403.00;252.65,3398.91" z_order="0">
+    </polygon>
+    <box label="Car" source="manual" occluded="0" xtl="1305.07" ytl="1994.34" xbr="1634.96" ybr="2283.36" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="531.90" ytl="1645.00" xbr="847.53" ybr="1916.30" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="970.80" ytl="1799.30" xbr="1271.70" ybr="2069.16" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1345.65" ytl="1403.40" xbr="1627.30" ybr="1640.09" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="951.10" ytl="2503.50" xbr="1313.80" ybr="2902.00" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1851.10" ytl="1600.30" xbr="2142.90" ybr="1833.77" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1948.90" ytl="2700.44" xbr="2309.30" ybr="2986.50" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="2085.43" ytl="2340.80" xbr="2400.00" ybr="2606.70" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1735.27" ytl="1171.56" xbr="1990.50" ybr="1394.30" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="970.10" ytl="784.06" xbr="1195.90" ybr="976.74" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="941.70" ytl="641.29" xbr="1162.70" ybr="816.30" z_order="0">
+    </box>
+  </image>
+  <image id="2" name="kristin-todorova-Ao_qzTVrALA-unsplash.jpg" width="2400" height="3610">
+  </image>
+  <image id="3" name="peter-robbins-JJg_1g4B0GY-unsplash.jpg" width="2400" height="1600">
+  </image>
+  <image id="4" name="yulia-matvienko-rXryjLSHVvQ-unsplash.jpg" width="3450" height="5175">
+  </image>
+</annotations>
