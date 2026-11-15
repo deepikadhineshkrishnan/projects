@@ -417,7 +417,7 @@ def previews_markdown(gif: Path | None, samples: list[Path]) -> str:
         out.append("<p>" + "".join(
             f'<img src="previews/{p.name}" width="49%" alt="Annotated sample"> ' for p in pair
         ).rstrip() + "</p>")
-    return "\n".join(out) if out else "_No preview images could be generated. Export with 'Save images' ticked; see docs/ADDING_A_PROJECT.md._"
+    return "\n".join(out) if out else "_No preview images could be generated. Add the original images to export/images/ or screenshots to previews/._"
 
 
 # --------------------------------------------------------------------------- main

@@ -40,7 +40,7 @@ projects/<project>/
 tools/cvat_showcase.py   # turns a CVAT export into statistics and previews
 ```
 
-To add or refresh a project, see [docs/ADDING_A_PROJECT.md](docs/ADDING_A_PROJECT.md).
+To refresh a project after a new CVAT export: `python3 tools/cvat_showcase.py --all`
 
 ## Data & license
 
