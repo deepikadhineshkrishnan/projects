@@ -526,6 +526,8 @@ def process(project: Path, n_samples: int, make_gif: bool) -> bool:
         frames[0].save(gif, save_all=True, append_images=frames[1:], duration=150, loop=0, optimize=True)
         print(f"  wrote {gif.name} ({len(frames)} frames)")
 
+    if gif is None and (prev_dir / "tracking.gif").exists():  # GIF supplied by hand (e.g. from a screen recording)
+        gif = prev_dir / "tracking.gif"
     stats = build_stats(data)
     (project / "STATS.md").write_text(
         f"# Annotation statistics\n\nGenerated from {', '.join(f'`{x.relative_to(project).as_posix()}`' for x in xml_paths)} "
