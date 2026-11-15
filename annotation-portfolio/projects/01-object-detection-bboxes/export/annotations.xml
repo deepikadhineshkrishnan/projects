@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>2730861</id>
+      <name>Urban Street-Vehicle</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-11-02 02:29:25.461603+00:00</created>
+      <updated>2026-11-15 01:43:54.734136+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>0</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>4683581</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url></url>
+        </segment>
+      </segments>
+      <owner></owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>Person</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Car</name>
+          <color>#fa3253</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>zebra-road-box</name>
+          <color>#bc4309</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>sign-label</name>
+          <color>#ddff33</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>road</name>
+          <color>#ffcc33</color>
+          <type>polygon</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>lane-line</name>
+          <color>#d4b7b0</color>
+          <type>polyline</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>eye-point</name>
+          <color>#733380</color>
+          <type>points</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>face-ellipse</name>
+          <color>#2a7dd1</color>
+          <type>ellipse</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3d3df5</color>
+          <type>cuboid</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Bus</name>
+          <color>#3d3df5</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Bicycle</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Motorcycle</name>
+          <color>#ff6a4d</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Traffic Sign</name>
+          <color>#b83df5</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Van</name>
+          <color>#ff00cc</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>zebra-road</name>
+          <color>#8c78f0</color>
+          <type>polygon</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+    <dumped>2026-11-15 01:46:21.588022+00:00</dumped>
+  </meta>
+  <image id="0" name="Urban Crosswalk with Bus and Cyclist.png" width="1536" height="1024">
+    <box label="Car" source="manual" occluded="0" xtl="672.30" ytl="443.10" xbr="1099.63" ybr="714.30" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1137.10" ytl="399.90" xbr="1368.82" ybr="582.75" z_order="0">
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="1380.12" ytl="394.70" xbr="1525.90" ybr="514.91" z_order="0">
+    </box>
+    <box label="Person" source="manual" occluded="0" xtl="28.10" ytl="386.80" xbr="121.60" ybr="636.61" z_order="0">
+    </box>
+    <box label="Person" source="manual" occluded="0" xtl="178.20" ytl="400.50" xbr="321.60" ybr="699.11" z_order="0">
+    </box>
+    <box label="Bicycle" source="manual" occluded="0" xtl="172.33" ytl="539.40" xbr="315.13" ybr="730.41" z_order="0">
+    </box>
+    <polygon label="road" source="manual" occluded="0" points="1.80,1024.00;0.00,787.98;0.00,737.59;1536.00,425.04;1536.00,1024.00;1211.64,1024.00" z_order="0">
+    </polygon>
+    <box label="Bus" source="manual" occluded="0" xtl="499.16" ytl="226.21" xbr="1072.41" ybr="593.42" z_order="0">
+    </box>
+    <polygon label="zebra-road" source="manual" occluded="0" points="4.39,761.26;1528.50,793.70;1536.00,876.13;1526.90,909.20;0.00,862.35;0.00,811.05" z_order="0">
+    </polygon>
+  </image>
+</annotations>

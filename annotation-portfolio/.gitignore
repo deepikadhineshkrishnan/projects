@@ -1,0 +1,19 @@
+# macOS / Python
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+
+# Downloaded CVAT zips: the unzipped annotations.xml is what gets committed
+projects/*/export/*.zip
+
+# Full image sets can make the repo very large. The previews/ folder already
+# shows annotated samples. Delete this line if you want to publish every image
+# (keep the repo under ~1 GB; GitHub warns on files over 50 MB).
+projects/*/export/images/
+
+# Projects still in progress: kept local until they have real annotations.
+# Delete a line here when that project is ready to publish.
+projects/02-instance-segmentation-polygons/
+projects/03-keypoints-skeletons/
+projects/04-video-object-tracking/
