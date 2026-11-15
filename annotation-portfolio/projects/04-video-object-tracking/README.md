@@ -5,7 +5,7 @@
 | **Annotation type** | Rectangle tracks with keyframes and interpolation |
 | **Tool** | CVAT (cvat.ai cloud) |
 | **Export format** | CVAT for video 1.1 (convertible to MOT, Datumaro) |
-| **Scale** | 611-frame video (25 fps) · 4 vehicle tracks · 531 tracked boxes |
+| **Scale** | 296-frame clip (25 fps, about 12 s) · 4 vehicle tracks · 531 tracked boxes |
 | **Scope** | Vehicles only |
 | **Date** | November 2026 |
 
@@ -47,7 +47,7 @@ Generated from the CVAT export in `export/` by `tools/cvat_showcase.py`. Full ta
 <!-- STATS:START -->
 | Metric | Value |
 |---|---|
-| Frames in video | 611 |
+| Frames in video | 296 |
 | Annotated frames | 296 |
 | Tracks (unique objects) | 4 |
 | Visible shapes across all frames | 531 |

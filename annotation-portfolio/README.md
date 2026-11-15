@@ -15,7 +15,7 @@ CVAT projects I have annotated, with the exported labels, previews and statistic
 | # | Project | Annotation types | Scale | Preview |
 |---|---------|------------------|-------|---------|
 | 1 | [Urban street scenes](projects/01-object-detection-bboxes) | Boxes, polygons, polylines, points, ellipses, cuboids | 3 images · 79 objects | <img src="projects/01-object-detection-bboxes/previews/sample_01.png" width="180"> |
-| 4 | [Video object tracking](projects/04-video-object-tracking) | Box tracks, keyframes, interpolation | 611 frames · 4 tracks · 531 boxes | <img src="projects/04-video-object-tracking/previews/tracking.gif" width="180"> |
+| 4 | [Video object tracking](projects/04-video-object-tracking) | Box tracks, keyframes, interpolation | 296 frames · 4 tracks · 531 boxes | <img src="projects/04-video-object-tracking/previews/tracking.gif" width="180"> |
 
 Each project folder has a README with the brief, label schema, guidelines, quality checks,
 statistics and annotated samples. The statistics come straight from the CVAT export.

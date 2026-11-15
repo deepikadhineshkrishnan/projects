@@ -4,7 +4,7 @@ Generated from `export/annotations.xml` by `tools/cvat_showcase.py`.
 
 | Metric | Value |
 |---|---|
-| Frames in video | 611 |
+| Frames in video | 296 |
 | Annotated frames | 296 |
 | Tracks (unique objects) | 4 |
 | Visible shapes across all frames | 531 |
