@@ -475,7 +475,7 @@ def scrub_personal_info(xml_path: Path):
         print("  removed account details (usernames/emails/URLs) from the export")
 
 
-def process(project: Path, n_samples: int, make_gif: bool) -> bool:
+def process(project: Path, n_samples: int, make_gif: bool, clip: bool = False) -> bool:
     export_dir, prev_dir = project / "export", project / "previews"
     print(f"\n== {project.relative_to(REPO) if project.is_relative_to(REPO) else project}")
     xml_paths = find_xmls(export_dir) if export_dir.exists() else []
@@ -486,6 +486,8 @@ def process(project: Path, n_samples: int, make_gif: bool) -> bool:
     for x in xml_paths:
         scrub_personal_info(x)
     data = merge_exports([parse_export(x) for x in xml_paths])
+    if clip and data["by_frame"]:
+        data["size"] = max(f for f, lst in data["by_frame"].items() if lst) + 1
     resolve, n_files = locate_images(export_dir)
     names = ", ".join(x.relative_to(project).as_posix() for x in xml_paths)
     print(f"  {names}: {data['size']} frames/images, "
@@ -526,6 +528,8 @@ def process(project: Path, n_samples: int, make_gif: bool) -> bool:
         frames[0].save(gif, save_all=True, append_images=frames[1:], duration=150, loop=0, optimize=True)
         print(f"  wrote {gif.name} ({len(frames)} frames)")
 
+    if gif is None and (prev_dir / "tracking.gif").exists():  # GIF supplied by hand (e.g. from a screen recording)
+        gif = prev_dir / "tracking.gif"
     stats = build_stats(data)
     (project / "STATS.md").write_text(
         f"# Annotation statistics\n\nGenerated from {', '.join(f'`{x.relative_to(project).as_posix()}`' for x in xml_paths)} "
@@ -546,12 +550,14 @@ def main():
     ap.add_argument("--all", action="store_true", help="process every folder in projects/")
     ap.add_argument("--samples", type=int, default=6, help="number of preview images (default 6)")
     ap.add_argument("--no-gif", action="store_true", help="skip the tracking GIF")
+    ap.add_argument("--clip-to-annotations", action="store_true",
+                    help="video: count only frames up to the last annotated one")
     args = ap.parse_args()
 
     targets = sorted(p for p in (REPO / "projects").iterdir() if p.is_dir()) if args.all else args.projects
     if not targets:
         ap.error("give a project folder or use --all")
-    done = sum(process(p.resolve(), args.samples, not args.no_gif) for p in targets)
+    done = sum(process(p.resolve(), args.samples, not args.no_gif, args.clip_to_annotations) for p in targets)
     print(f"\nProcessed {done} of {len(targets)} project(s).")
 
 

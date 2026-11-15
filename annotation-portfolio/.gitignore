@@ -16,4 +16,3 @@ projects/*/export/images/
 # Delete a line here when that project is ready to publish.
 projects/02-instance-segmentation-polygons/
 projects/03-keypoints-skeletons/
-projects/04-video-object-tracking/
